@@ -2525,26 +2525,23 @@ input, select, textarea {
     width:auto;
     height:auto;
 }
-
-	.image {
-		border-radius: 6px;
+.image {
+		border-radius: 4px;
 		border: 0;
 		display: inline-block;
-		position: absolute;
-		left: 20;
-			top: 20;
+		position: relative;
 		overflow: hidden;
 	}
 
 		.image:before {
 			content: '';
-			display: inline-block;
+			display: block;
 			position: absolute;
 			left: 0;
 			top: 0;
 			background-image: url("images/overlay.png");
-			width: 20%;
-			height: 20%;
+			width: 100%;
+			height: 100%;
 			z-index: 1;
 		}
 
@@ -2579,16 +2576,12 @@ input, select, textarea {
 			width: 100%;
 		}
 
-			.image.center img {
+			.image.fit img {
 				width: 100%;
+			}
 			
-			
-				position: absolute;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-   padding: 20px;
+			.img {
+  float: right;
 }
 
 /* List */
